@@ -1,2 +1,2 @@
-export const API = 'http://localhost:3000/api'
+export const API = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
 export const ADMIN_PASSWORD = 'admin123'

@@ -6,14 +6,14 @@ const slotsRouter        = require('./routes/slots')
 const reservationsRouter = require('./routes/reservations')
 
 const app  = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // Middleware
 app.use(cors())
 app.use(express.json())
 
 // Connexion à MongoDB
-mongoose.connect('mongodb://localhost:27017/coursEcriture')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/aquacoach')
   .then(() => console.log('MongoDB connecté'))
   .catch(err => console.error('Erreur MongoDB :', err))
 
