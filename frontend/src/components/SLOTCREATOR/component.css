@@ -1,0 +1,75 @@
+.slotcreator {
+  background: #fff;
+  border: 1px solid #e0e7f0;
+  border-left: 3px solid #0055b3;
+  border-radius: 14px;
+  padding: 1.5rem 1.8rem;
+}
+
+.slotcreator h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.2px;
+}
+
+.slotcreator-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.slotcreator label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #8a9ab5;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.slotcreator input {
+  border: 1.5px solid #dde5f0;
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  color: #0d1f3c;
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f7fb;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.slotcreator input:focus {
+  outline: none;
+  border-color: #0055b3;
+  background: #fff;
+}
+
+.slotcreator button[type='submit'] {
+  background: #0055b3;
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.2s;
+}
+
+.slotcreator button[type='submit']:hover {
+  opacity: 0.85;
+}
+
+.creator-message {
+  color: #38a169;
+  font-size: 0.82rem;
+  margin-top: 0.7rem;
+  font-weight: 500;
+}

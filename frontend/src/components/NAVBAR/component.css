@@ -1,0 +1,131 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 18px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid transparent;
+  transition: background 0.35s, border-color 0.35s;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom-color: #e0e7f0;
+}
+
+.navbar-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--primary);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.brand-dot {
+  color: var(--blue);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.navbar-links > button {
+  background: none;
+  border: none;
+  color: #5a6a85;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.navbar-links > button:hover {
+  color: var(--primary);
+}
+
+.navbar-cta {
+  background: var(--blue) !important;
+  color: #fff !important;
+  padding: 11px 26px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  transition: opacity 0.2s !important;
+}
+
+.navbar-cta:hover {
+  opacity: 0.84;
+  color: #fff !important;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #aab4c8;
+  font-size: 0.85rem;
+}
+
+.lang-toggle button {
+  background: none;
+  border: none;
+  color: #aab4c8;
+  font-size: 0.85rem;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+  transition: color 0.2s;
+}
+
+.lang-toggle button.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.lang-toggle button:hover {
+  color: var(--primary);
+}
+
+.admin-link {
+  background: none;
+  border: 1px solid var(--border);
+  color: #aab4c8;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  transition: all 0.2s;
+}
+
+.admin-link:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 16px 24px;
+  }
+  .navbar-links {
+    display: none;
+  }
+}

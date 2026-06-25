@@ -1,0 +1,209 @@
+.tarifs {
+  padding: 100px 64px;
+  background: var(--bg);
+}
+
+.tarifs-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.tarifs-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.tarifs-subtitle {
+  font-size: 16px;
+  color: #8a9ab5;
+  max-width: 400px;
+  margin: 12px auto 0;
+  line-height: 1.7;
+}
+
+.tarifs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.tarif-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px;
+  position: relative;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.tarif-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 85, 179, 0.08);
+  transform: translateY(-4px);
+}
+
+.tarif-card.featured {
+  background: #0055b3;
+  border-color: transparent;
+  box-shadow: 0 12px 40px rgba(0, 85, 179, 0.25);
+}
+
+.tarif-card.featured:hover {
+  box-shadow: 0 18px 48px rgba(0, 85, 179, 0.32);
+}
+
+.tarif-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tarif-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.featured .tarif-name {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 8px;
+}
+
+.tarif-save {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  background: #e8f0fc;
+  color: var(--blue);
+  padding: 3px 11px;
+  border-radius: 100px;
+  margin-bottom: 18px;
+}
+
+.featured .tarif-save {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.tarif-price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 28px;
+}
+
+.price-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1;
+  color: var(--primary);
+}
+
+.featured .price-value {
+  color: #fff;
+}
+
+.price-unit {
+  font-size: 14px;
+  color: #aab4c8;
+}
+
+.featured .price-unit {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tarif-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.tarif-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #5a6a85;
+}
+
+.featured .tarif-features li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feature-check {
+  width: 18px;
+  height: 18px;
+  background: #e8f0fc;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.featured .feature-check {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.tarif-cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #f0f5ff;
+  color: var(--blue);
+  border: none;
+  transition: background 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.tarif-cta:hover {
+  background: #dde8f8;
+}
+
+.featured .tarif-cta {
+  background: #fff;
+  transition: opacity 0.2s;
+}
+
+.featured .tarif-cta:hover {
+  opacity: 0.9;
+}
+
+.tarifs-note {
+  text-align: center;
+  font-size: 13px;
+  color: #aab4c8;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .tarifs {
+    padding: 60px 24px;
+  }
+  .tarifs-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,51 @@
+.timeslots {
+  text-align: center;
+}
+
+.timeslots-date {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.timeslots-label {
+  color: var(--muted2);
+  margin-bottom: 1.5rem;
+  font-size: 0.88rem;
+}
+
+.timeslots-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.slot-btn {
+  background: var(--white);
+  border: 1.5px solid var(--blue);
+  color: var(--blue);
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  transition: all 0.18s;
+}
+
+.slot-btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.timeslots-empty {
+  color: var(--muted2);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  background: var(--bg);
+  border-radius: 10px;
+  border: 1px dashed var(--border2);
+}

@@ -1,0 +1,64 @@
+.confirmation {
+  text-align: center;
+  padding: 2rem;
+}
+
+.confirmation-check {
+  width: 64px;
+  height: 64px;
+  background: var(--success);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.confirmation h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.5px;
+}
+
+.confirmation > p {
+  color: var(--muted2);
+  margin-bottom: 1rem;
+}
+
+.confirmation-detail {
+  background: rgba(0, 85, 179, 0.06);
+  border: 1px solid rgba(0, 85, 179, 0.2);
+  border-radius: 10px;
+  padding: 0.85rem 1.5rem;
+  color: var(--blue);
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  display: inline-block;
+  margin: 0.5rem auto 1rem;
+  font-size: 0.95rem;
+}
+
+.confirmation-sub {
+  font-size: 0.85rem;
+  color: var(--muted2);
+  margin-bottom: 2rem;
+}
+
+.confirmation button {
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.2s;
+}
+
+.confirmation button:hover {
+  opacity: 0.85;
+}

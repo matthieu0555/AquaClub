@@ -1,0 +1,111 @@
+.adminlogin-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #fff 55%, #e8f0fc 100%);
+  padding: 2rem;
+}
+
+.adminlogin-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border: 1px solid #e0e7f0;
+  border-radius: 20px;
+  padding: 2.8rem 2.4rem;
+  box-shadow: 0 8px 32px rgba(0, 85, 179, 0.08);
+}
+
+.adminlogin-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d1f3c;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.brand-dot {
+  color: #0055b3;
+}
+
+.adminlogin-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.5px;
+}
+
+.adminlogin-sub {
+  font-size: 0.85rem;
+  color: #8a9ab5;
+  margin-bottom: 1.8rem;
+}
+
+.adminlogin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.adminlogin-input {
+  border: 1.5px solid #dde5f0;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  color: #0d1f3c;
+  background: #f5f7fb;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.adminlogin-input:focus {
+  outline: none;
+  border-color: #0055b3;
+  background: #fff;
+}
+
+.adminlogin-error {
+  color: #d93025;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.adminlogin-submit {
+  background: #0055b3;
+  color: #fff;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  transition: opacity 0.2s;
+  margin-top: 0.25rem;
+}
+
+.adminlogin-submit:hover {
+  opacity: 0.85;
+}
+
+.adminlogin-back {
+  display: block;
+  text-align: center;
+  margin-top: 1.4rem;
+  font-size: 0.83rem;
+  color: #8a9ab5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: color 0.2s;
+  width: 100%;
+}
+
+.adminlogin-back:hover {
+  color: #0d1f3c;
+}

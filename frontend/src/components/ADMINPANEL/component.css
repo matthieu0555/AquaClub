@@ -1,0 +1,134 @@
+.adminpanel {
+  min-height: 100vh;
+  background: #f5f7fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.adminpanel-header {
+  background: #0d1f3c;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.adminpanel-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.adminpanel-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.adminpanel-brand .brand-dot {
+  color: #4d9fff;
+}
+
+.adminpanel-dash-label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'DM Sans', sans-serif;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  padding-left: 20px;
+  letter-spacing: 0.5px;
+}
+
+.adminpanel-back {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.72);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s, color 0.2s;
+}
+
+.adminpanel-back:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.adminpanel-body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  flex: 1;
+}
+
+.adminpanel-footer {
+  background: #0d1f3c;
+  padding: 1rem 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.adminpanel-footer-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.adminpanel-footer-brand .brand-dot {
+  color: #4d9fff;
+}
+
+.admin-tabs {
+  display: flex;
+  margin-bottom: 1.8rem;
+  border-bottom: 2px solid #e0e7f0;
+}
+
+.admin-tabs button {
+  background: none;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.92rem;
+  color: #8a9ab5;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.admin-tabs button.active {
+  color: #0055b3;
+  border-bottom-color: #0055b3;
+}
+
+.admin-tabs button:hover:not(.active) {
+  color: #0d1f3c;
+}
+
+.admin-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .adminpanel-header {
+    padding: 0 20px;
+  }
+  .adminpanel-body {
+    padding: 1.5rem 1rem;
+  }
+}

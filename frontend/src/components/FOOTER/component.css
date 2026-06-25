@@ -1,0 +1,53 @@
+.footer {
+  border-top: none;
+  padding: 32px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  background: #0d1f3c;
+}
+
+.footer-brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.brand-dot {
+  color: #4d9fff;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links button {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: 'DM Sans', sans-serif;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.footer-links button:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+}

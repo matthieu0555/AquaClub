@@ -1,0 +1,113 @@
+.reservationlist h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 1rem;
+  letter-spacing: -0.2px;
+}
+
+.reservation-item {
+  border: 1px solid #e0e7f0;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.reservation-item:hover {
+  border-color: #c0d3ee;
+  box-shadow: 0 2px 12px rgba(0, 85, 179, 0.06);
+}
+
+.reservation-dot {
+  width: 8px;
+  height: 8px;
+  background: #0055b3;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.reservation-slot {
+  color: #0d1f3c;
+  font-size: 0.86rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  flex: 0 0 180px;
+}
+
+.reservation-slot span {
+  font-weight: 400;
+  color: #8a9ab5;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 1px;
+}
+
+.reservation-client {
+  color: #0d1f3c;
+  font-size: 0.9rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.reservation-client span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #8a9ab5;
+  margin-top: 2px;
+}
+
+.reservation-email {
+  color: #8a9ab5;
+  font-size: 0.8rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.reservation-email span {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.75rem;
+}
+
+.reservation-cancel-btn {
+  background: none;
+  border: 1px solid #dde5f0;
+  border-radius: 6px;
+  padding: 0.28rem 0.72rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #8a9ab5;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.reservation-cancel-btn:hover {
+  border-color: #e53e3e;
+  color: #e53e3e;
+}
+
+@media (max-width: 680px) {
+  .reservation-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .reservation-dot {
+    display: none;
+  }
+  .reservation-slot {
+    flex: none;
+  }
+  .reservation-email {
+    text-align: left;
+  }
+}
